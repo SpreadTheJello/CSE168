@@ -116,6 +116,6 @@ int main(int argc, char** argv) {
       std::string user("world");
       greeter.SayHello(user);
   }
-  std::cout << "Throughput: " << result/messages_count+1 << "Messages/milliseconds" << std::endl;
+  std::cout << "Throughput: " << (messages_count+1)/result << "Messages/milliseconds" << std::endl;
   return 0;
 }
